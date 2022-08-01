@@ -1,3 +1,5 @@
+chmod 777
+
 Mix Masters
 
 # Team Overview
