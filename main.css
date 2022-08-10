@@ -2,7 +2,7 @@
 
     background-color: wheat;
     width: 100%;
-    height: 600px;
+    height: 800px;
     color: red;
 }
 
@@ -18,4 +18,12 @@
     background-color: aquamarine;
     width: 80%;
     height: 85%;
+}
+
+.leftButton {
+    width: 200px;
+}
+
+.rightButton {
+    width: 200px;
 }
