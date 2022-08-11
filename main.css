@@ -6,6 +6,8 @@
     color: red;
 }
 
+/*all four below can be reworked into 2 classes.*/
+
 .recipesMenu {
     margin: auto;
     background-color: aquamarine;
@@ -15,7 +17,7 @@
 
 .calculator {
     margin: auto;
-    background-color: aquamarine;
+    background-color: aqua;
     width: 80%;
     height: 85%;
 }

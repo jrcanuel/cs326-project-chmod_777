@@ -23,6 +23,26 @@ class Calculator {
         calculator.classList.add("calculator");
         calculator.setAttribute("id", "calculator");
         document.getElementById("drinkCalc").appendChild(calculator);
+
+        //repeated code below from menu.js; could be condensed into new class later.
+
+        let leftButton = document.createElement("input");
+        leftButton.type = "button";
+        leftButton.value = "< Previous";
+        leftButton.classList.add("leftButton");
+        leftButton.setAttribute("id", "leftButton");
+        leftButton.style.marginTop = '10px';
+        leftButton.style.marginRight = '10px';
+        document.getElementById("drinkCalc").appendChild(leftButton);
+
+        let rightButton = document.createElement("input");
+        rightButton.type = "button";
+        rightButton.value = "Next >";
+        rightButton.classList.add("rightButton");
+        rightButton.setAttribute("id", "rightButton");
+        rightButton.style.marginTop = '10px';
+        rightButton.style.marginLeft = '10px';
+        document.getElementById("drinkCalc").appendChild(rightButton);
     }
 
     addIngredient(ingredient) { //to be used with a text input / checkbox inputs
