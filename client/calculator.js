@@ -1,5 +1,3 @@
-import { Drink } from './drink.js';
-
 //Calculator class, which is instantiated everytime the button is pressed
 
 class Calculator {
@@ -61,4 +59,6 @@ class Calculator {
     }
 }
 
-export{Calculator}
+const calculator = new Calculator();
+
+export{ calculator }
