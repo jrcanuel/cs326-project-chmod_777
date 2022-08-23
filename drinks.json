@@ -1,0 +1,61 @@
+{
+    "Dirty Shirley": {
+        "ingredients": ["Lemon-Lime Soda", "Grenadine", "Vodka"], 
+        "pic": "https://s.yimg.com/ny/api/res/1.2/BVky3owZzXDoSnibOAw8Qg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6vY9szGtXPVLYPKrlh2vw--~B/aD0wO3c9MDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/purewow_185/f51ae90008d571aa78f1d8d8106c4a12"
+    },
+
+    "Margarita": {
+        "ingredients":["Tequila", "Cointreau", "Lime Juice"],
+        "pic": ""
+    },
+
+    "Martini": {
+        "ingredients":["Gin", "Vermouth"],
+        "pic": ""
+    },
+
+    "Old Fashioned": {
+        "ingredients":["Bourbon Whiskey", "Bitters"],
+        "pic": ""
+    },
+
+    "Mimosa": {
+        "ingredients":["Champagne", "Orange Juice"],
+        "pic": ""
+    },
+
+    "Moscow Mule": {
+        "ingredients":["Vodka", "Ginger Beer", "Lime Juice"],
+        "pic": ""
+    },
+
+    "Cosmopolitan": {
+        "ingredients":["Citrus Vodka", "Cointreau", "Lime Juice", "Cranberry Juice"],
+        "pic": ""
+    },
+
+    "Grateful Dead": {
+        "ingredients": ["Tequila", "Gin", "Vodka", "Rum", "Raspberry Liquer", "Triple Sec", "Sour Mix"],
+        "pic": "https://fullformtoday.com/wp-content/uploads/2022/03/Blue-Grateful-Dead-Drink-Recipe.jpg"
+    },
+
+    "Whiskey Sour": {
+        "ingredients":["Whiskey", "Lemon Juice"],
+        "pic": ""
+    },
+
+    "Manhattan": {
+        "ingredients":["Rye Whiskey", "Vermouth", "Bitters"],
+        "pic": ""
+    },
+
+    "Mojito": {
+        "ingredients":["White Rum", "Lime Juice", "Simple Syrup"],
+        "pic": ""
+    },
+
+    "Dark & Stormy": {
+        "ingredients":["Rum", "Ginger Beer"],
+        "pic": ""
+    }
+}

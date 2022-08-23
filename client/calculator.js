@@ -2,7 +2,8 @@
 
 class Calculator {
     constructor() {
-        this.ingredients = {} //todo: add list of mainstream ingredients as <ingredient: String, have: Boolean>
+        this.ingredients = [] //all ingredients; fetch drinks.json, then put every ingredient into a set, then create an array from that.
+        this.currIngredients = []; //currently selected ingredients
 
         if(document.getElementById("recipeMenuBtn").classList.contains("disabled")) {
             document.getElementById("recipeMenuBtn").classList.remove("disabled");
