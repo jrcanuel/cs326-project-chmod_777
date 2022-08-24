@@ -3,30 +3,25 @@
     background-color: wheat;
     width: 100%;
     height: 100%;
-    color: red;
 }
 
 /*all four below can be reworked into 2 classes.*/
 
 .drinksMenu {
-    margin: auto;
-    background-color: aquamarine;
-    width: 80%;
-    height: 85%;
+    background-color: orange;
+    width: 100%;
+    height: 640px;
+    color: olivedrab;
 }
 
 .calculatorMenu {
-    margin: auto;
-    background-color: aqua;
-    width: 80%;
-    height: 85%;
+    background-color: plum;
+    width: 100%;
+    height: 640px;
+    color: maroon;
 }
 
-.leftButton {
-    width: 200px;
-}
-
-.rightButton {
+.shiftButton {
     width: 200px;
 }
 

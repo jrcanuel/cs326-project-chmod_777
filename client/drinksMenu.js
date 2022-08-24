@@ -7,23 +7,33 @@ class DrinksMenu {
     async render(element) {
         const response = await fetch('/readD');
         this.drinks = await response.json();
+
         element.innerHTML = await this.renderCurr();
-        addButtons(element);
+        this.addButtons(element);
+
         element.classList.remove('calculatorMenu');
-        element.classList += ' drinksMenu';
+        if(element.hasAttribute("class", "drinksMenu")) {element.classList += ' drinksMenu';}
     }
 
     async renderCurr() {    //returns string HTML of currDrink object
-        let drink = this.drinks[this.currDrink];
-        return `${drink.name}
+        let drink = await this.drinks[this.currDrink];
+        let ingredients = drink.ingredients;
+        let recipe = ''
+        for(let i = 0; i < ingredients.length-1; i++) {recipe += ingredients[i] + ', ';}
+        recipe += ingredients[ingredients.length-1];
+        return `<h1>
+                ${drink.name}
                 <br>
                 <img src="${drink.pic}">
                 <br>
-                ${drink.ingredients}`;
+                </h1>
+                <h2>
+                ${recipe}
+                </h2>`;
     }
 
     shiftRight() {
-        if(this.currDrink >= this.drinks.length) {
+        if(this.currDrink >= this.drinks.length-1) {
             this.currDrink = 0;
         }
         else {
@@ -36,12 +46,23 @@ class DrinksMenu {
             this.currDrink--;
         }
         else {
-            this.currDrink = this.drinks.length;
+            this.currDrink = this.drinks.length-1;
         }
     }
 
-    addButtons() {
-        
+    addButtons(element) {
+        element.innerHTML += `<input type="button" class="shiftButton" id="leftBtn" value="Previous"></input>
+                              <input type="button" class="shiftButton" id="rightBtn" value="Next"></input>`;
+
+        document.getElementById('leftBtn').addEventListener('click', () => {
+            this.shiftLeft()
+            this.render(element);
+        });
+
+        document.getElementById('rightBtn').addEventListener('click', () => {
+            this.shiftRight()
+            this.render(element);
+        });
     }
 }
 
