@@ -1,21 +1,22 @@
 import { Menu } from './menu.js';
 import { calculator } from './calculator.js';
 
-//main file / script, handles creating eventListeners
-
 const menu = document.getElementById("menu");
+const drinkBtn = document.getElementById("drinkMenuBtn");
+const calcBtn = document.getElementById("calcMenuBtn");
+//declare element references
 
-const initialPic =  document.createElement("img");
-initialPic.innerHTML = 'src="https://cf.ltkcdn.net/cocktails/images/std-lg/268481-1200x773-what-is-liqueur-how-is-it-different-from-liquor.webp" alt="liquors & liquers"'
-menu.appendChild(initialPic);
+menu.innerHTML = '<img src="https://cf.ltkcdn.net/cocktails/images/std-lg/268481-1200x773-what-is-liqueur-how-is-it-different-from-liquor.webp"></img>';
+//render initial pic (will be replaced on first click)
 
-
-document.getElementById("recipeMenuBtn").addEventListener("click", () => {
-    if(firstClick) {document.getElementById("initialPic").remove();}
-    let menu = new Menu();
+drinkBtn.addEventListener("click", () => {
+    console.log("drinks clicked");
+    drinkBtn.classList += ' disabled';
+    calcBtn.classList.remove('disabled');
 });
 
-document.getElementById("drinkCalcBtn").addEventListener("click", () => {
-    if(firstClick) {document.getElementById("initialPic").remove();}
-    let calc = new Calculator();
+calcBtn.addEventListener("click", () => {
+    console.log("calc clicked");
+    calcBtn.classList += ' disabled';
+    drinkBtn.classList.remove('disabled');
 });
