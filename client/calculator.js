@@ -13,8 +13,10 @@ class Calculator {
     async render(element) {
         const response = await fetch('/readCI');
         const data = await response.json();
-        element.innerHTML = data;
-        console.log(data);
+        this.currIngredients = data;
+        element.innerHTML = this.currIngredients;
+        element.classList.remove('drinksMenu');
+        element.classList += ' calculatorMenu';
     }
 
     async addIngredient(ingredient) {

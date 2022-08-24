@@ -30,3 +30,6 @@
     width: 200px;
 }
 
+.calculatorCheckBoxes {
+    grid-template-columns: auto;
+}
