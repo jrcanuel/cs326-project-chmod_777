@@ -1,4 +1,4 @@
-import { Menu } from './menu.js';
+import { drinksMenu } from './drinksMenu.js';
 import { calculator } from './calculator.js';
 
 const menu = document.getElementById("menu");
@@ -13,10 +13,14 @@ drinkBtn.addEventListener("click", () => {
     console.log("drinks clicked");
     drinkBtn.classList += ' disabled';
     calcBtn.classList.remove('disabled');
+
+    calculator.render(menu);
 });
 
 calcBtn.addEventListener("click", () => {
     console.log("calc clicked");
     calcBtn.classList += ' disabled';
     drinkBtn.classList.remove('disabled');
+
+    drinksMenu.render(menu);
 });

@@ -1,8 +1,5 @@
-//Menu class, which is instantiated everytime the button is pressed
-
-class Menu {
+class DrinksMenu {
     constructor() {
-        
         if(document.getElementById("drinkCalcBtn").classList.contains("disabled")) {
             document.getElementById("drinkCalcBtn").classList.remove("disabled");
             document.getElementById("drinkCalc").remove();
