@@ -12,7 +12,6 @@ menu.innerHTML = '<img src="https://cf.ltkcdn.net/cocktails/images/std-lg/268481
 //render initial pic (will be replaced on first click)
 
 drinkBtn.addEventListener("click", () => {
-    console.log("drinks clicked");
     drinkBtn.classList += ' disabled';
     calcBtn.classList.remove('disabled');
 
@@ -20,7 +19,6 @@ drinkBtn.addEventListener("click", () => {
 });
 
 calcBtn.addEventListener("click", () => {
-    console.log("calc clicked");
     calcBtn.classList += ' disabled';
     drinkBtn.classList.remove('disabled');
 

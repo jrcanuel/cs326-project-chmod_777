@@ -5,11 +5,29 @@ class DrinksMenu {
     }
 
     async render(element) {
-        const response = await fetch('/readD');
-        this.drinks = await response.json();
+        const response1 = await fetch('/readD');
+        const drinks = await response1.json();
 
-        element.innerHTML = await this.renderCurr();
-        this.addButtons(element);
+        const response2 = await fetch('/readCI');
+        const currI = await response2.json();
+
+        if(currI.length === 0) {this.drinks = drinks;}
+
+        else {
+            this.drinks = drinks.filter(drink => {
+                let res = true;
+                drink.ingredients.forEach(i => {if(currI.indexOf(i) === -1) {res = false;}});
+                return res;
+            });
+        }
+
+        if(this.drinks.length <= 0) {element.innerHTML = `<h1><br>ERROR: <br><br><br> NO DRINKS AVAILABLE FROM YOUR <br><br> CURRENT SELECTION OF INGREDIENTS. 
+                                                          <br><br><br> PLEASE CHANGE YOUR SEARCH CRITERIA AND COME BACK.</h1>`;} 
+
+        else {
+            element.innerHTML = await this.renderCurr();
+            this.addButtons(element);
+        }
 
         element.classList.remove('calculatorMenu');
         if(element.hasAttribute("class", "drinksMenu")) {element.classList += ' drinksMenu';}
