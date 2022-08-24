@@ -13,13 +13,20 @@ class Database {
     }
 
     async removeIngredient(ingredient) {
-        const data = await this.read(this.CI);
-        data = data.filter(element != ingredient);
+        let data = await this.read(this.CI);
+        data = data.filter((i) => {
+            return i !== ingredient;
+        });
         await this.write(data, this.CI);
     }
 
     async getDrinks() {
         const data = await this.read(this.D);
+        return data;
+    }
+
+    async getIngredients() {
+        const data = await this.read(this.CI);
         return data;
     }
 

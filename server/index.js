@@ -13,19 +13,24 @@ app.use('/', express.static('client'));
 
 //endpoints:
 app.post('/add', async (request, response) => {
-    const options = request.body();
+    const options = request.body;
     await database.addIngredient(options.ingredient);
     response.json();
 });
 
 app.delete('/remove', async (request, response) => {
-    const options = request.body();
+    const options = request.body;
     await database.removeIngredient(options.ingredient);
     response.json();
 });
 
-app.get('/read', async (request, response) => {
+app.get('/readD', async (request, response) => {
     const data = await database.getDrinks();
+    response.json(data);
+});
+
+app.get('/readCI', async (request, response) => {
+    const data = await database.getIngredients();
     response.json(data);
 });
 

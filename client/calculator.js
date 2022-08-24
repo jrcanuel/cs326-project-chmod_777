@@ -9,6 +9,37 @@ class Calculator {
         
         this.currIngredients = []; //currently selected ingredients
     }
+
+    async render(element) {
+        const response = await fetch('/readCI');
+        const data = await response.json();
+        element.innerHTML = data;
+        console.log(data);
+    }
+
+    async addIngredient(ingredient) {
+        const data = {ingredient: ingredient};
+        this.currIngredients.push(ingredient);
+        const response = await fetch('/add', {
+            headers: {'Content-Type': 'application/json'},
+            method: 'POST',
+            body: JSON.stringify(data)
+        });
+        console.log(this.currIngredients);
+    }
+
+    async removeIngredient(ingredient) {
+        const data = {ingredient: ingredient};
+        this.currIngredients = this.ingredients.filter((i) => {
+            return i !== ingredient;
+        });
+        const response = await fetch('/remove', {
+            headers: {'Content-Type': 'application/json'},
+            method: 'DELETE',
+            body: JSON.stringify(data)
+        });
+        console.log(this.currIngredients);
+    }
 }
 
 const calculator = new Calculator();
