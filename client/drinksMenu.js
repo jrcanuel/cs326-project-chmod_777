@@ -22,9 +22,10 @@ class DrinksMenu {
         for(let i = 0; i < ingredients.length-1; i++) {recipe += ingredients[i] + ', ';}
         recipe += ingredients[ingredients.length-1];
         return `<h1>
-                ${drink.name}
                 <br>
-                <img src="${drink.pic}">
+                ${drink.name}   
+                <br>
+                <img src="${drink.pic}" height="400" width="711">
                 <br>
                 </h1>
                 <h2>

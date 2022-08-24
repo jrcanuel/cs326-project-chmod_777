@@ -4,27 +4,27 @@
     },
 
     {"name": "Margarita","ingredients":["Tequila", "Cointreau", "Lime Juice"],
-    "pic": ""
+    "pic": "https://www.mashed.com/img/gallery/how-to-tell-your-margarita-is-high-quality-according-to-the-national-margarita-day-creator/l-intro-1648557656.jpg"
     },
 
     {"name": "Martini","ingredients":["Gin", "Vermouth"],
-    "pic": ""
+    "pic": "https://media.gq.com/photos/57a21eff3a803448479c3d18/16:9/w_2992,h_1683,c_limit/gin-martini.jpg"
     },
 
     {"name": "Old Fashioned","ingredients":["Bourbon Whiskey", "Bitters"],
-    "pic": ""
+    "pic": "https://assets.epicurious.com/photos/5e41a6d175661800087cc87c/16:9/w_4619,h_2598,c_limit/OldFashioned_HERO_020520_619.jpg"
     },
 
     {"name": "Mimosa","ingredients":["Champagne", "Orange Juice"],
-    "pic": ""
+    "pic": "https://assets.epicurious.com/photos/599f2393a4e555303661808f/16:9/w_1280,c_limit/mimosa-cocktail-082417.jpg"
     },
 
     {"name": "Moscow Mule","ingredients":["Vodka", "Ginger Beer", "Lime Juice"],
-    "pic": ""
+    "pic": "https://assets.epicurious.com/photos/55a9040a98d8666b6dcda0c2/16:9/w_1280,c_limit/shutterstock_277767518-6x4-CP.jpg"
     },
 
     {"name": "Cosmopolitan","ingredients":["Citrus Vodka", "Cointreau", "Lime Juice", "Cranberry Juice"],
-    "pic": ""
+    "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQSQcYJZtf-LNGumu_J7k5TsBRbKMTBCf9qg&usqp=CAU"
     },
 
     {"name": "Grateful Dead","ingredients": ["Tequila", "Gin", "Vodka", "Rum", "Raspberry Liquer", "Triple Sec", "Sour Mix"],
@@ -32,18 +32,18 @@
     },
 
     {"name": "Whiskey Sour","ingredients":["Whiskey", "Lemon Juice"],
-    "pic": ""
+    "pic": "https://assets.epicurious.com/photos/605b5501ca1ffc178a2d26d3/16:9/w_3488,h_1962,c_limit/Editorial_04_WhiskeySour-v4-6x4.jpg"
     },
 
     {"name": "Manhattan","ingredients":["Rye Whiskey", "Vermouth", "Bitters"],
-    "pic": ""
+    "pic": "https://assets.epicurious.com/photos/5e41d5ef1d48a1000814dbb7/16:9/w_4690,h_2638,c_limit/Manhattan_HERO_020520_472.jpg"
     },
 
     {"name": "Mojito","ingredients":["White Rum", "Lime Juice", "Simple Syrup"],
-    "pic": ""
+    "pic": "https://assets.bonappetit.com/photos/620ffe21d2721805fdcfbd31/16:9/w_4543,h_2555,c_limit/20220215%20Mojito%20LEDE.jpg"
     },
 
-    {"name": "Dark & Stormy", "ingredients":["Rum", "Ginger Beer"], 
-    "pic": ""
+    {"name": "Dark 'n Stormy", "ingredients":["Rum", "Ginger Beer"], 
+    "pic": "https://food-images.files.bbci.co.uk/food/recipes/dark_and_stormy_92822_16x9.jpg"
     }
 ]
