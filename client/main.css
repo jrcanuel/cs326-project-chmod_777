@@ -1,4 +1,4 @@
-.menu {
+.menuWrapper {
 
     background-color: wheat;
     width: 100%;
@@ -8,14 +8,14 @@
 
 /*all four below can be reworked into 2 classes.*/
 
-.recipesMenu {
+.drinksMenu {
     margin: auto;
     background-color: aquamarine;
     width: 80%;
     height: 85%;
 }
 
-.calculator {
+.calculatorMenu {
     margin: auto;
     background-color: aqua;
     width: 80%;
@@ -29,3 +29,4 @@
 .rightButton {
     width: 200px;
 }
+

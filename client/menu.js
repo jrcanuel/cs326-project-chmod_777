@@ -1,16 +1,7 @@
-import { Drink } from './drink.js';
-
 //Menu class, which is instantiated everytime the button is pressed
 
 class Menu {
     constructor() {
-        this.drinks = [ //todo: array of 20 popular drink objects, change to an imported array from drink.js & add to calculator.js 
-            new Drink("Dirty Shirley", ["Lemon-Lime Soda", "Grenadine", "Vodka"], "https://s.yimg.com/ny/api/res/1.2/BVky3owZzXDoSnibOAw8Qg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6vY9szGtXPVLYPKrlh2vw--~B/aD0wO3c9MDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/purewow_185/f51ae90008d571aa78f1d8d8106c4a12"),
-            new Drink("Grateful Dead", ["Tequila", "Gin", "Vodka", "Rum", "Raspberry Liquer", "Triple Sec", "Sour Mix"], "https://fullformtoday.com/wp-content/uploads/2022/03/Blue-Grateful-Dead-Drink-Recipe.jpg"),
-            new Drink("Long Island Iced Tea", ["Vodka", "Rum", "Tequila", "Gin", "Triple Sec", "Lemon Juice", "Cola"], "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/long-island-iced-tea-7-1650298273.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*")
-        ];
-        this.currentDrink = 0;
-        var lastDrink;
         
         if(document.getElementById("drinkCalcBtn").classList.contains("disabled")) {
             document.getElementById("drinkCalcBtn").classList.remove("disabled");

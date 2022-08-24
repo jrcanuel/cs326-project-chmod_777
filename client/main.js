@@ -3,19 +3,19 @@ import { calculator } from './calculator.js';
 
 //main file / script, handles creating eventListeners
 
-//general todo: fix up element names in other classes; currently confusing with names like "recipeMenu" vs "menu" vs "recipesMenu" etc.
-//^^^ also, eventListeners within menu and calculator js files could be cleaned up by writing them into functions and calling functions inside constructor.
+const menu = document.getElementById("menu");
 
-let firstClick = true;
-let firstSelect = true;
+const initialPic =  document.createElement("img");
+initialPic.innerHTML = 'src="https://cf.ltkcdn.net/cocktails/images/std-lg/268481-1200x773-what-is-liqueur-how-is-it-different-from-liquor.webp" alt="liquors & liquers"'
+menu.appendChild(initialPic);
+
+
 document.getElementById("recipeMenuBtn").addEventListener("click", () => {
     if(firstClick) {document.getElementById("initialPic").remove();}
     let menu = new Menu();
-    firstClick = false;
 });
 
 document.getElementById("drinkCalcBtn").addEventListener("click", () => {
     if(firstClick) {document.getElementById("initialPic").remove();}
     let calc = new Calculator();
-    firstClick = false;
 });
